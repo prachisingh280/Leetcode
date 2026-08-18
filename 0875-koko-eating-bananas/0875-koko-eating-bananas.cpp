@@ -1,38 +1,36 @@
 class Solution {
 public:
-   long long findvalue(vector<int>&piles, int mid)
+long long total_time(vector<int>&piles,int mid)
 {
-    long long n = piles.size();
+    int n = piles.size();
     long long value = 0;
-    for(long long i=0; i<n; i++)
+    for(int i=0; i<n; i++)
     {
         value += ceil((double)piles[i]/mid);
     }
     return value;
 }
-int minEatingSpeed(vector<int>& piles, int h)
-{
-    long long n = piles.size();
-    long long minn = 1;
-    long long maxx = *max_element(piles.begin(),piles.end());
-    long long low = 1;
-    long long high = maxx;
-    long long ans = 1;
-    while(low<=high)
+    int minEatingSpeed(vector<int>& piles, int h) {
+        int n = piles.size();
+    int l = 1;
+    int r = *max_element(piles.begin(),piles.end());
+    int ans = 1;
+    
+    while(l<=r)
     {
-        long long mid = (low+high)/2;
-        long long value = findvalue(piles,mid);
-        
+        int mid = (l+r)/2;
+        long long value = total_time(piles,mid);
+       
         if(value<=h)
         {
             ans = mid;
-            high = mid-1;
+            r = mid-1;
         }
         else
         {
-            low = mid+1;
+            l = mid+1;
         }
     }
     return ans;
-}
+    }
 };
