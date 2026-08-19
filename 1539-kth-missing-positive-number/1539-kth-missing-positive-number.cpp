@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int solve(vector<int>&arr,int mid, int max_len, int k)
+    int solve(vector<int>&arr, int max_len, int k)
 {
     int n = arr.size();
     int cnt = 0;
@@ -26,11 +26,8 @@ public:
 int findKthPositive(vector<int>& arr, int k)
 {
     int n = arr.size();
-    int l = 1;
     int max_len = *max_element(arr.begin(),arr.end());
-    int h = max_len + k;
-    int mid = (l+h)/2;
-    int ans = solve(arr,mid,max_len,k);
+    int ans = solve(arr,max_len,k);
     return ans;
 }
 };
