@@ -8,6 +8,7 @@
 | [0033-search-in-rotated-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/prachisingh280/Leetcode/tree/master/0035-search-insert-position) |
+| [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/prachisingh280/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0136-single-number](https://github.com/prachisingh280/Leetcode/tree/master/0136-single-number) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -56,6 +57,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 | [0283-move-zeroes](https://github.com/prachisingh280/Leetcode/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/prachisingh280/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Hash Table
@@ -66,9 +68,18 @@
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 | [0349-intersection-of-two-arrays](https://github.com/prachisingh280/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0136-single-number](https://github.com/prachisingh280/Leetcode/tree/master/0136-single-number) |
+## Quicksort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
+## Bubble Sort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
