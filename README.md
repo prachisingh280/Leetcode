@@ -11,6 +11,7 @@
 | [0053-maximum-subarray](https://github.com/prachisingh280/Leetcode/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/prachisingh280/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0128-longest-consecutive-sequence](https://github.com/prachisingh280/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/prachisingh280/Leetcode/tree/master/0136-single-number) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/prachisingh280/Leetcode/tree/master/0162-find-peak-element) |
@@ -67,6 +68,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/prachisingh280/Leetcode/tree/master/0001-two-sum) |
+| [0128-longest-consecutive-sequence](https://github.com/prachisingh280/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/prachisingh280/Leetcode/tree/master/0169-majority-element) |
 | [0349-intersection-of-two-arrays](https://github.com/prachisingh280/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Sorting
@@ -100,4 +102,8 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/prachisingh280/Leetcode/tree/master/0169-majority-element) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/prachisingh280/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
