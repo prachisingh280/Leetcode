@@ -21,6 +21,7 @@
 | [0410-split-array-largest-sum](https://github.com/prachisingh280/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0485-max-consecutive-ones](https://github.com/prachisingh280/Leetcode/tree/master/0485-max-consecutive-ones) |
 | [0540-single-element-in-a-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0560-subarray-sum-equals-k](https://github.com/prachisingh280/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0704-binary-search](https://github.com/prachisingh280/Leetcode/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/prachisingh280/Leetcode/tree/master/0875-koko-eating-bananas) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/prachisingh280/Leetcode/tree/master/1011-capacity-to-ship-packages-within-d-days) |
@@ -58,6 +59,7 @@
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/prachisingh280/Leetcode/tree/master/0410-split-array-largest-sum) |
+| [0560-subarray-sum-equals-k](https://github.com/prachisingh280/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 ## Two Pointers
 |  |
 | ------- |
@@ -71,6 +73,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/prachisingh280/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/prachisingh280/Leetcode/tree/master/0169-majority-element) |
 | [0349-intersection-of-two-arrays](https://github.com/prachisingh280/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [0560-subarray-sum-equals-k](https://github.com/prachisingh280/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 ## Sorting
 |  |
 | ------- |
