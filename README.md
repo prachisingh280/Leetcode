@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/prachisingh280/Leetcode/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/prachisingh280/Leetcode/tree/master/0015-3sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/prachisingh280/Leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/prachisingh280/Leetcode/tree/master/0035-search-insert-position) |
@@ -64,6 +65,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/prachisingh280/Leetcode/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 | [0283-move-zeroes](https://github.com/prachisingh280/Leetcode/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/prachisingh280/Leetcode/tree/master/0349-intersection-of-two-arrays) |
@@ -79,6 +81,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/prachisingh280/Leetcode/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/prachisingh280/Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/prachisingh280/Leetcode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/prachisingh280/Leetcode/tree/master/0229-majority-element-ii) |
