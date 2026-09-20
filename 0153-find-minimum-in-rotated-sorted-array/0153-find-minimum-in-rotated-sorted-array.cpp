@@ -2,26 +2,24 @@ class Solution {
 public:
     int findMin(vector<int>& nums) {
         int n = nums.size();
-    int l = 0;
-    int h = n-1;
+    int left = 0;
+    int right = n-1;
     int ans = INT_MAX;
     
-    while(l<=h)
+    while(left<=right)
     {
-        int mid = (l+h)/2;
+        int mid = (left+right)/2;
         
-        if(nums[l]<=nums[mid])
+        if(nums[left]<=nums[mid])
         {
-            ans = min(nums[l],ans); 
-            l = mid+1;
+            ans = min(ans,nums[left]);
+            left = mid+1;
         }
-    
-        else if(nums[mid]<=nums[h])
+        else
         {
             ans = min(ans,nums[mid]);
-            h = mid-1;
+            right = mid-1;
         }
-        
     }
     
     return ans;
