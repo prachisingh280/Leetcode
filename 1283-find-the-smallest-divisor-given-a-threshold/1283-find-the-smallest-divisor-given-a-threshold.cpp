@@ -1,9 +1,10 @@
 class Solution {
 public:
-    int answer(vector<int>&nums,int mid)
+    int answer(vector<int>&nums, int mid)
 {
     int n = nums.size();
     int sum = 0;
+    
     for(int i=0; i<n; i++)
     {
         sum = sum + ceil((double)nums[i]/mid);
@@ -14,22 +15,24 @@ public:
 int smallestDivisor(vector<int>& nums, int threshold)
 {
     int n = nums.size();
-    int l = 1;
-    int h = *max_element(nums.begin(), nums.end());
-    int ans = 0;
+    int low = 1;
+    int high = *max_element(nums.begin(),nums.end());
+    int mid;
+    int ans;
     
-    while(l<=h)
+    while(low<=high)
     {
-        int mid = (l+h)/2;
-        int sum = answer(nums,mid);
-        if(sum<=threshold)
+        mid = (low+high)/2;
+        int poss_ans = answer(nums,mid);
+
+        if(poss_ans<=threshold)
         {
             ans = mid;
-            h = mid-1;
+            high = mid-1;
         }
         else
         {
-            l = mid+1;
+            low = mid+1;
         }
     }
     
