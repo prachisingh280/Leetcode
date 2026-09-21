@@ -1,52 +1,71 @@
 class Solution {
 public:
-    int possibility(vector<int>&bloomDay, int mid,int k)
+    bool possibility(vector<int>&bloomDay, int mid, int m, int k)
 {
     int n = bloomDay.size();
     int cnt = 0;
     int ans = 0;
+    
     for(int i=0; i<n; i++)
     {
         if(bloomDay[i]<=mid)
         {
             cnt++;
+            if(cnt==k)
+            {
+                ans++;
+                cnt = 0;
+            }
         }
         else
         {
-            ans += cnt/k;
             cnt = 0;
         }
     }
-    ans += cnt/k;
-    cnt = 0;
-    return ans;
-            
+    
+    if(cnt>=k)
+    {
+        ans++;
+        cnt = 0;
+    }
+    if(ans>=m)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
-
 int minDays(vector<int>& bloomDay, int m, int k)
 {
     int n = bloomDay.size();
-    long long minn = *min_element(bloomDay.begin(),bloomDay.end());
-    long long maxx = *max_element(bloomDay.begin(),bloomDay.end());
-    if((1LL*m*k)>n)
+    if((long long)n<((long long)m*k))
     {
         return -1;
     }
-    int ans = -1;
-    while(minn<=maxx)
+    
+    int low = *min_element(bloomDay.begin(),bloomDay.end());
+    int high = *max_element(bloomDay.begin(),bloomDay.end());
+    int ans;
+    
+    while(low<=high)
     {
-        int mid = (minn+maxx)/2;
-        int ans1 = possibility(bloomDay,mid,k);
-        if(ans1>=m)
+        int mid = (low+high)/2;
+        
+        int poss_ans = possibility(bloomDay,mid,m,k);
+        
+        if(poss_ans==1)
         {
             ans = mid;
-            maxx = mid-1;
+            high = mid-1;
         }
         else
         {
-            minn = mid+1;
+           low = mid+1; 
         }
     }
+    
     return ans;
 }
 };
