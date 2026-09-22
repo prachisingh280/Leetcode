@@ -1,53 +1,60 @@
 class Solution {
 public:
-    long long countt(vector<int>&weights,long long days, long long mid)
+    int possibility(vector<int>&weights, int mid)
 {
     int n = weights.size();
-    int sum = 0;
     int cnt = 0;
-    for(int i = 0; i<n; i++)
+    int sum = 0;
+    
+    for(int i=0; i<n; i++)
     {
-        if((sum + weights[i])<=mid)
+        if((sum + weights[i])==mid)
         {
-            sum += weights[i];
+            sum = 0;
+            cnt++;
+        }
+        else if((sum + weights[i])<mid)
+        {
+            sum = sum + weights[i];
         }
         else
         {
-            cnt++;
             sum = weights[i];
+            cnt++;
         }
     }
-    if(sum<=mid)
-    {
-        cnt++;
-    }
+    
+    if(sum>0)
+    cnt++;
+    
     return cnt;
 }
 int shipWithinDays(vector<int>& weights, int days)
 {
     int n = weights.size();
-    int l = *max_element(weights.begin(),weights.end());
     int sum = 0;
+    
     for(int i=0; i<n; i++)
     {
         sum += weights[i];
     }
-    int h = sum;
+    int ans;
+    int low = *max_element(weights.begin(),weights.end());
+    int high = sum;
     
-    long long ans = 0;
-
-    while(l<=h)
+    while(low<=high)
     {
-        long long mid = (l+h)/2;
-        int answer = countt(weights,days,mid);
-        if(answer<=days)
+        int mid = (low+high)/2;
+        int countt = possibility(weights,mid);
+        
+        if(countt<=days)
         {
             ans = mid;
-            h = mid-1;
+            high = mid-1;
         }
         else
         {
-            l = mid+1;
+            low = mid+1;
         }
     }
     
