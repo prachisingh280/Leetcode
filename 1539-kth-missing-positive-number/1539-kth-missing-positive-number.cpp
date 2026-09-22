@@ -1,33 +1,32 @@
 class Solution {
 public:
-    int solve(vector<int>&arr, int max_len, int k)
-{
-    int n = arr.size();
-    int cnt = 0;
-    int i = 0;
-    for(int j=1; j<max_len; j++)
+    int findKthPositive(vector<int>& arr, int k) {
+        int n = arr.size();
+    int low = 0;
+    int high = n-1;
+
+    while(low<=high)
     {
-        if(arr[i]!=j)
+        int mid = (low+high)/2;
+        int misses = arr[mid] - (mid+1);
+        
+        if(misses<k)
         {
-            cnt++;
+            low = mid+1;
         }
         else
         {
-            i++;
-        }
-        if(cnt == k)
-        {
-            return j;
+            high = mid-1;
         }
     }
     
-    return max_len+k-cnt;
-}
-int findKthPositive(vector<int>& arr, int k)
-{
-    int n = arr.size();
-    int max_len = *max_element(arr.begin(),arr.end());
-    int ans = solve(arr,max_len,k);
-    return ans;
-}
+    if(high==-1)
+    {
+        return k;
+    }
+    else
+    {
+        return arr[high] + (k-(arr[high] - (high+1)));
+    }
+    }
 };
