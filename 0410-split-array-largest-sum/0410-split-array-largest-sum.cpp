@@ -1,17 +1,16 @@
 class Solution {
 public:
-    int answer(vector<int>&nums, int mid)
+    bool possibility(vector<int>&nums, int mid, int k)
 {
     int n = nums.size();
     int sum = 0;
     int cnt = 1;
-    int max_sub_sum = 0;
     
     for(int i=0; i<n; i++)
     {
-        if(sum+nums[i]<=mid)
+        if(sum + nums[i]<=mid)
         {
-            sum += nums[i];
+            sum += nums[i]; 
         }
         else
         {
@@ -20,33 +19,30 @@ public:
         }
     }
     
-    return cnt;
+    if(cnt<=k)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 int splitArray(vector<int>& nums, int k)
 {
     int n = nums.size();
     int low = *max_element(nums.begin(),nums.end());
-    int sum = 0;
-    int ans = 0;
-    
-    for(int i=0; i<n; i++)
-    {
-        sum += nums[i];
-    }
-    
-    int high = sum;
+    int high = accumulate(nums.begin(),nums.end(),0);
+    int anss = low;
     
     while(low<=high)
     {
         int mid = (low+high)/2;
-        int cnt = answer(nums,mid);
-        if(cnt==k)
+        int ans = possibility(nums,mid,k);
+        
+        if(ans == true)
         {
-            ans = mid;
-            high = mid-1;
-        }
-        else if(cnt<k)
-        {
+            anss = mid;
             high = mid-1;
         }
         else
@@ -55,6 +51,6 @@ int splitArray(vector<int>& nums, int k)
         }
     }
     
-    return low;
+    return anss;
 }
 };
